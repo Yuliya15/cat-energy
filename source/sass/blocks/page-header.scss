@@ -1,0 +1,39 @@
+
+.page-header {
+  padding: 10px 20px 17px;
+}
+
+.page-header__toggle {
+  background-color: transparent;
+  border: none;
+}
+
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.menu {
+margin: 0;
+padding: 0;
+display: none;
+  &__item {
+    list-style-type: none;
+  }
+  &__link {
+    font-size: 18px;
+    line-height: 24px;
+    color: #000000;
+    text-decoration: none;
+    }
+}
+
+

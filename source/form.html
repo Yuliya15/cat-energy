@@ -2,16 +2,22 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
     <title>Cat Energy: Подбор программы</title>
   </head>
   <body class="page__body">
     <header class="page-header">
       <nav class="page-header__nav">
         <a class="page-header__logo logo" href="index.html">
-          <img class="logo__image" src="../image/logo.svg" width="34" height="38" alt="Логотип магазина «Cat Energy»">
-          <img class="logo__name" src="../image/logo-name.svg" width="101" height="18" alt="Имя магазина Cat Energy">
+          <img class="logo__image" src="image/logo.svg" width="34" height="38" alt="Логотип магазина «Cat Energy»">
+          <img class="logo__name" src="image/logo-name.svg" width="101" height="18" alt="Имя магазина Cat Energy">
         </a>
         <button class="page-header__toggle" type="button">
+          <svg width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <line y1="1.25" x2="24" y2="1.25" stroke="black" stroke-width="1.5"/>
+            <line y1="9.25" x2="24" y2="9.25" stroke="black" stroke-width="1.5"/>
+            <line y1="17.25" x2="24" y2="17.25" stroke="black" stroke-width="1.5"/>
+          </svg>
           <span class="visually-hidden">Открыть меню</span>
         </button>
         <ul class="page-header__menu menu">
@@ -28,28 +34,28 @@
       </nav>
     </header>
     <main class="page-main">
-      <h1 class="title">Подбор программы</h1>
+      <h1 class="title title--form">Подбор программы</h1>
       <section class="page-main__form form">
         <form class="form__filter filter" action="https://echo.htmlacademy.ru/" method="post">
-          <p class="filter__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+          <p class="filter__text">Заполните анкету, и мы подберем <br> программу питания для вашего кота</p>
           <fieldset class="filter__group field-group">
             <legend class="visually-hidden">Основная информация</legend>
             <ul class="field-group__list">
               <li class="field-group__item">
                 <label class="field">
-                  <span class="field__lead">ИМЯ:*</span>
+                  <span class="field__label">ИМЯ:*</span>
                   <input class="field__input" type="text" name="Имя" value="Барсик" required>
                 </label>
               </li>
               <li class="field-group__item">
                 <label class="field">
-                  <span class="field__lead">Вес (кг):*</span>
+                  <span class="field__label">Вес (кг):*</span>
                   <input class="field__input" type="number" name="Вес" value="7" required>
                 </label>
               </li>
               <li class="field-group__item">
                 <label class="field">
-                  <span class="field__lead">Возраст (лет):</span>
+                  <span class="field__label">Возраст (лет):</span>
                   <input class="field__input" type="number" name="Возраст" value="7">
                 </label>
               </li>
@@ -82,20 +88,26 @@
             </ul>
           </fieldset>
           <fieldset class="filter__group field-group">
-            <legend class="field-group__title">Контактные данные (владельца кота)</legend>
-            <label class="field">
-              <span class="field__lead">E-mail:*</span>
-              <input class="field__input field__input--email" type="text" name="Почта" value="кuklachev@gmail.com" required>
-            </label>
-            <label class="field">
-              <span class="field__lead">Телефон:*</span>
-              <input class="field__input field__input--phone" type="tel" name="Телефон" value="8 (960) 900-60-90" required>
-            </label>
+            <legend class="field-group__title">Контактные данные <br> (владельца кота)</legend>
+            <ul class="field-group__list">
+              <li class="field-group__item">
+                <label class="field">
+                  <span class="field__label">E-mail:*</span>
+                  <input class="field__input field__input--email" type="text" name="Почта" value="кuklachev@gmail.com" required>
+                </label>
+              </li>
+              <li class="field-group__item">
+                <label class="field">
+                  <span class="field__label">Телефон:*</span>
+                  <input class="field__input field__input--phone" type="tel" name="Телефон" value="8 (960) 900-60-90" required>
+                </label>
+              </li>
+            </ul>
           </fieldset>
           <fieldset class="filter__group field-group">
             <legend class="field-group__title">Комментарий</legend>
             <label class="field">
-              <textarea class="field__comment" cols="" name="comment">Расскажите обо всех повадках кота</textarea>
+              <textarea class="field__comment" cols="40" rows="10" name="comment">Расскажите обо всех повадках кота</textarea>
             </label>
           </fieldset>
           <fieldset class="filter__group field-group">
@@ -135,15 +147,16 @@
     <footer class="page-footer">
       <section class="page-footer__contacts contacts">
         <h2 class="visually-hidden">Адрес магазина функционального питания Cat Energy</h2>
-        <p class="contacts__text">приглашаем к сотрудничеству дилеров!</p>
-        <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 <br>
-        Санкт-Петербург</p>
-        <img src="/image/location.jpg" width="320" height="362" alt="Карта местонахождения магазина Cat Energy">
+        <div class="contacts__wrapper">
+          <p class="contacts__text">приглашаем к сотрудничеству дилеров!</p>
+          <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 <br> Санкт-Петербург</p>
+        </div>
+        <img class="contacts__map" src="image/location.jpg" width="320" height="362" alt="Карта местонахождения магазина Cat Energy">
       </section>
       <section class="page-footer__social social">
         <h2 class="visually-hidden">Социальные сети</h2>
         <a class="social__logo logo" aria-current="page">
-          <img class="logo__name" src="../image/logo-name.svg" width="101" height="18" alt="Имя магазина Cat Energy">
+          <img class="logo__name" src="image/logo-name.svg" width="101" height="18" alt="Имя магазина Cat Energy">
         </a>
         <ul class="social__list">
           <li class="social__item">

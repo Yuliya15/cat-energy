@@ -1,0 +1,33 @@
+.promo {
+  background-blend-mode: multiply;
+  background-image: url("../image/index-background-cat.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: rgba(104, 183, 56, 0.85);
+  &__wrapper {
+    padding-inline: 20px;
+  }
+  &__slogan {
+    font-size: 14px;
+    line-height: 14px;
+    color: #FFFFFF;
+    text-align: center;
+  }
+  &__image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  &__button {
+    display: block;
+    width: 280px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 7px 44px;
+    box-sizing: border-box;
+
+    font-size: 14px;
+    line-height: 18px;
+  }
+}

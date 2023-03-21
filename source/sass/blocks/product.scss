@@ -1,0 +1,26 @@
+.product {
+  padding-block: 13px 19px;
+  border-top: 1px solid #CDCDCD;
+  border-bottom: 1px solid #CDCDCD;
+  &__subtitle {
+    margin-bottom: 13px;
+
+    font-size: 16px;
+    line-height: 16px;
+    color: #222222;
+
+    text-transform: uppercase;
+  }
+}
+
+.additionally {
+  display: flex;
+  margin: 0;
+  margin-bottom: 15px;
+  padding: 0;
+
+  font-family: 'Arial', sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+  color: #444444;
+}

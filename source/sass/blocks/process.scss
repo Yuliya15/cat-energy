@@ -1,0 +1,58 @@
+.process {
+  margin-bottom: 53px;
+  &__wrapper {
+    padding-inline: 21px;
+  }
+  &__title {
+    font-size: 36px;
+    line-height: 40px;
+    font-weight: 400;
+    color: #000000;
+  }
+  &__list {
+    margin: 0;
+    padding: 0;
+  }
+  &__item {
+    margin-bottom: 20px;
+    list-style-type: none;
+    font-size: 14px;
+    line-height: 18px;
+    color: #444444;
+    &--benefit::before {
+      display: inline-block;
+      content: url("../image/benefit.svg");
+      width: 60px;
+      height: 60px;
+      margin-right: 20px;
+      vertical-align: middle;
+    }
+    &--cooking::before {
+      display: inline-block;
+      content: url("../image/cooking.svg");
+      width: 60px;
+      height: 60px;
+      margin-right: 20px;
+      vertical-align: middle;
+    }
+    &--eating::before {
+      display: inline-block;
+      content: url("../image/eating.svg");
+      width: 60px;
+      height: 60px;
+      margin-right: 20px;
+      vertical-align: middle;
+    }
+    &--result::before {
+      display: inline-block;
+      content: url("../image/result.svg");
+      width: 60px;
+      height: 60px;
+      margin-right: 20px;
+      vertical-align: middle;
+    }
+  }
+  &__item:last-child {
+    margin-bottom: 0;
+  }
+}
